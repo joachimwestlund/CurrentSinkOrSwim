@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: mån  9 feb 2015 18:57:56
+#
+$CMP LM2931D-R
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+#End Doc Library
