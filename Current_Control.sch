@@ -1,0 +1,207 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CurrentSinkOrSwim
+LIBS:CurrentSinkOrSwim-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date "12 feb 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MOSFET_N Q?
+U 1 1 54DCE765
+P 7350 4200
+F 0 "Q?" H 7360 4370 60  0000 R CNN
+F 1 "BUK9575" H 7360 4050 60  0000 R CNN
+F 2 "~" H 7350 4200 60  0000 C CNN
+F 3 "~" H 7350 4200 60  0000 C CNN
+F 4 "BUK9575-100A,127" H 7350 4200 60  0001 C CNN "MPN"
+	1    7350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54DCE76C
+P 7450 5150
+F 0 "R?" V 7530 5150 40  0000 C CNN
+F 1 "0.1" V 7457 5151 40  0000 C CNN
+F 2 "~" V 7380 5150 30  0000 C CNN
+F 3 "~" H 7450 5150 30  0000 C CNN
+F 4 "AC01000001007JA100" H 7450 5150 60  0001 C CNN "MPN"
+	1    7450 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4400 7450 4900
+$Comp
+L OP275 U?
+U 1 1 54DCE77B
+P 4900 4200
+F 0 "U?" H 4900 4350 60  0000 L CNN
+F 1 "OP275" H 4900 4050 60  0000 L CNN
+F 2 "" H 4900 4200 60  0000 C CNN
+F 3 "" H 4900 4200 60  0000 C CNN
+	1    4900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54DCE782
+P 4800 4600
+F 0 "#PWR?" H 4800 4600 30  0001 C CNN
+F 1 "GND" H 4800 4530 30  0001 C CNN
+F 2 "" H 4800 4600 60  0000 C CNN
+F 3 "" H 4800 4600 60  0000 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4500 4800 4600
+$Comp
+L R R?
+U 1 1 54DCE78F
+P 3700 4450
+F 0 "R?" V 3780 4450 40  0000 C CNN
+F 1 "R" V 3707 4451 40  0000 C CNN
+F 2 "~" V 3630 4450 30  0000 C CNN
+F 3 "~" H 3700 4450 30  0000 C CNN
+	1    3700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3900 3700 4200
+Wire Wire Line
+	4550 4100 3700 4100
+Connection ~ 3700 4100
+Wire Wire Line
+	4550 4300 4150 4300
+Wire Wire Line
+	4150 4300 4150 4800
+Wire Wire Line
+	4150 4800 7450 4800
+Connection ~ 7450 4800
+$Comp
+L C C?
+U 1 1 54DCE79D
+P 4350 3200
+F 0 "C?" H 4350 3300 40  0000 L CNN
+F 1 "C" H 4356 3115 40  0000 L CNN
+F 2 "~" H 4388 3050 30  0000 C CNN
+F 3 "~" H 4350 3200 60  0000 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 54DCE7A5
+P 4350 3650
+F 0 "#PWR?" H 4350 3650 30  0001 C CNN
+F 1 "GND" H 4350 3580 30  0001 C CNN
+F 2 "" H 4350 3650 60  0000 C CNN
+F 3 "" H 4350 3650 60  0000 C CNN
+	1    4350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2850 4800 3900
+Wire Wire Line
+	4350 3000 4350 2850
+Connection ~ 4350 2850
+Wire Wire Line
+	4350 3400 4350 3650
+Wire Wire Line
+	3700 4700 3700 5650
+Wire Wire Line
+	3700 5650 8700 5650
+Connection ~ 7450 5650
+$Comp
+L POT RV?
+U 1 1 54DCE7B4
+P 3700 3650
+F 0 "RV?" H 3700 3550 50  0000 C CNN
+F 1 "POT" H 3700 3650 50  0000 C CNN
+F 2 "~" H 3700 3650 60  0000 C CNN
+F 3 "~" H 3700 3650 60  0000 C CNN
+	1    3700 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2850 4800 2850
+Wire Wire Line
+	3850 1500 3850 3650
+Wire Wire Line
+	3850 1500 3000 1500
+Connection ~ 3850 2850
+Text GLabel 3000 1500 0    60   Input ~ 0
+2.7V
+Wire Wire Line
+	7450 4000 7450 2550
+Wire Wire Line
+	7450 2550 8550 2550
+$Comp
+L R R?
+U 1 1 54DCE81D
+P 5800 4200
+F 0 "R?" V 5880 4200 40  0000 C CNN
+F 1 "R" V 5807 4201 40  0000 C CNN
+F 2 "~" V 5730 4200 30  0000 C CNN
+F 3 "~" H 5800 4200 30  0000 C CNN
+	1    5800 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 4200 5550 4200
+Wire Wire Line
+	6050 4200 7150 4200
+Wire Wire Line
+	6650 4200 6650 2150
+Wire Wire Line
+	6650 2150 8550 2150
+Connection ~ 6650 4200
+Text HLabel 8550 2150 2    60   Input ~ 0
+FET_Gate
+Text HLabel 8550 2550 2    60   Input ~ 0
+Current_Sink+
+Wire Wire Line
+	7450 5650 7450 5400
+Text HLabel 8700 5650 2    60   Output ~ 0
+Current_Sink-
+$EndSCHEMATC
